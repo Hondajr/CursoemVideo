@@ -1,2 +1,2 @@
-# Ola Mundo
- Primeiro Repositorio Versionado
+# Olá, Mundo
+ Primeiro repositório do curso de Git e GitHub do mestre Gustavo Guanabara.
