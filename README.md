@@ -1,4 +1,2 @@
-# Olá, Mundo
- Primeiro repositório do curso de Git e GitHub do mestre Gustavo Guanabara.
-
- >>Essa linha foi adicionada pelo site.<<
+# Curso em Video
+ Repositório criado com intuito de acompanhamento dos cursos ministrados pelo Mestre Gustavo Guanabara.
