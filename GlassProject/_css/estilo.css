@@ -117,3 +117,29 @@ nav#menu a:hover{
   color:white;
   text-decoration: underline;
 }
+
+
+section#corpo{
+  display: block;
+  width: 750px;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right: 15px;
+}
+
+aside#lateral{
+  display: block;
+  width: 600px;
+  float:right;
+}
+
+footer#rodape{
+  clear:both;
+  border-top:1px solid #606060;
+  margin-top: 0px;
+  padding-top:0px;
+}
+footer#rodape p{
+  margin-top:4px;
+  text-align: center;
+}
