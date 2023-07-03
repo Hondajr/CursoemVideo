@@ -38,3 +38,27 @@ figure.foto-legenda figcaption{
 figure.foto-legenda figcaption:hover{
   opacity: 1;
 }
+
+/* Formatação Menu */
+nav#menu{
+  display: block;
+}
+
+nav#menu ul{
+  list-style:none;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+;}
+
+nav#menu li{
+  display: inline-block;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 2px;
+}
+
+nav#menu h1{
+  display: none;
+}
