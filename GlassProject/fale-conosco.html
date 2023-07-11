@@ -6,8 +6,16 @@
   <title>Tudo sobre Google Glass</title>
   <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
   <link rel="stylesheet" type="text/css" href="_css/form.css" />
+  <script src="_javascript/funcoes.js"></script>
+  <script>
+    function calc_total(){
+      var qtd = parseInt(document.getElementById('cQtd').value);
+      var total = qtd* 1500;
+      document.getElementById('cTot').value = total;
+    }
+  </script>
 </head>
-<script src="_javascript/funcoes.js"></script>
+
 
 <body>
   <div id="interface">
@@ -272,30 +280,30 @@
               </p>
               <p>
                 <label for="cMsg">Mensagem:</label>
-                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
               </p>
           </fieldset>
           <fieldset id="pedido">
             <legend>Quero um Google Glass</legend>
               <p>
+                <input type="checkbox" name="tPed" id="cPed" checked/>
                 <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label>
-
               </p>
               <p>
                 <label for="cCor">Cor:</label>
-
+                <input type="color" name="tCor" id="cCor" value="#FFFFFF"/>
               </p>
               <p>
                 <label for="cQtd">Quantidade:</label>
-
+                <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0" onchange="calc_total()"/>
               </p>
               <p>
                 <label for="cTot">Preço Total: R$</label>
-
+                <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly/>
               </p>
           </fieldset>
 
-          [BOTÃO ENVIAR]
+          <input type="image" name="tEnviar" src="_imagens/botao-enviar.png"/>
         </form>
       </article>
     </section>
