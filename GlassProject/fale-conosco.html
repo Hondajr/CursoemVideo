@@ -41,7 +41,7 @@
             <h3 class="direita">Atualizado em 01/Maio/2013</h3>
           </hgroup>
         </header>
-        <form>
+        <form method="post" id="fContato" action="#">
           <fieldset id="usuario">
             <legend>Identificação do Usuário</legend>
               <p>
@@ -80,21 +80,219 @@
                 <label for="cNumero">Número:</label>
                 <input type="number" name="tNumero" id="cNumero" min="1" max="9999"/>
               </p>
-              Estado:
-              Cidade:
+              <p>
+                <label for="cEst">Estado:</label>
+                <select name="tEst" id="cEst">
+                  <optgroup label="Região Sudeste">
+                    <option value="BA">Bahia</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP" selected>São Paulo</option>
+                  </optgroup>
+                  <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                  </optgroup>
+                  <optgroup label="Região Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                  </optgroup>
+                  <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="CE">Ceará</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                  </optgroup>
+                  <optgroup label="Região Centro-Oeste">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="TO">Tocantins</option>
+                  </optgroup>
+                </select>
+              </p>
+              <p>
+                <label for="cCid">Cidade:</label>
+                <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Cidade" list="cidades"/>
+              </p>
+              <datalist id="cidades">
+                <optgroup label="Acre">
+                  <option value="Rio Branco">
+                  <option value="Cruzeiro do Sul">
+                  <option value="Sena Madureira">
+                </optgroup>
+                <optgroup label="Alagoas">
+                  <option value="Maceió">
+                  <option value="Arapiraca">
+                  <option value="Rio Largo">
+                </optgroup>
+                <optgroup label="Amapá">
+                  <option value="Macapá">
+                  <option value="Santana">
+                  <option value="Laranjal do Jari">
+                </optgroup>
+                <optgroup label="Amazonas">
+                  <option value="Manaus">
+                  <option value="Parintins">
+                  <option value="Itacoatiara">
+                </optgroup>
+                <optgroup label="Bahia">
+                  <option value="Salvador">
+                  <option value="Feira de Santana">
+                  <option value="Vitória da Conquista">
+                </optgroup>
+                <optgroup label="Ceará">
+                  <option value="Fortaleza">
+                  <option value="Caucaia">
+                  <option value="Juazeiro do Norte">
+                </optgroup>
+                <optgroup label="Distrito Federal">
+                  <option value="Brasília">
+                  <option value="Ceilândia">
+                  <option value="Taguatinga">
+                </optgroup>
+                <optgroup label="Espírito Santo">
+                  <option value="Vitória">
+                  <option value="Vila Velha">
+                  <option value="Cariacica">
+                </optgroup>
+                <optgroup label="Goiás">
+                  <option value="Goiânia">
+                  <option value="Aparecida de Goiânia">
+                  <option value="Anápolis">
+                </optgroup>
+                <optgroup label="Maranhão">
+                  <option value="São Luís">
+                  <option value="Imperatriz">
+                  <option value="Timon">
+                </optgroup>
+                <optgroup label="Mato Grosso">
+                  <option value="Cuiabá">
+                  <option value="Várzea Grande">
+                  <option value="Rondonópolis">
+                </optgroup>
+                <optgroup label="Mato Grosso do Sul">
+                  <option value="Campo Grande">
+                  <option value="Dourados">
+                  <option value="Três Lagoas">
+                </optgroup>
+                <optgroup label="Minas Gerais">
+                  <option value="Belo Horizonte">
+                  <option value="Uberlândia">
+                  <option value="Contagem">
+                </optgroup>
+                <optgroup label="Pará">
+                  <option value="Belém">
+                  <option value="Ananindeua">
+                  <option value="Santarém">
+                </optgroup>
+                <optgroup label="Paraíba">
+                  <option value="João Pessoa">
+                  <option value="Campina Grande">
+                  <option value="Santa Rita">
+                </optgroup>
+                <optgroup label="Paraná">
+                  <option value="Curitiba">
+                  <option value="Londrina">
+                  <option value="Maringá">
+                </optgroup>
+                <optgroup label="Pernambuco">
+                  <option value="Recife">
+                  <option value="Jaboatão dos Guararapes">
+                  <option value="Olinda">
+                </optgroup>
+                <optgroup label="Piauí">
+                  <option value="Teresina">
+                  <option value="Parnaíba">
+                  <option value="Picos">
+                </optgroup>
+                <optgroup label="Rio de Janeiro">
+                  <option value="Rio de Janeiro">
+                  <option value="São Gonçalo">
+                  <option value="Duque de Caxias">
+                </optgroup>
+                <optgroup label="Rio Grande do Norte">
+                  <option value="Natal">
+                  <option value="Mossoró">
+                  <option value="Parnamirim">
+                </optgroup>
+                <optgroup label="Rio Grande do Sul">
+                  <option value="Porto Alegre">
+                  <option value="Caxias do Sul">
+                  <option value="Pelotas">
+                </optgroup>
+                <optgroup label="Rondônia">
+                  <option value="Porto Velho">
+                  <option value="Ji-Paraná">
+                  <option value="Ariquemes">
+                </optgroup>
+                <optgroup label="Roraima">
+                  <option value="Boa Vista">
+                  <option value="Caracaraí">
+                  <option value="São Luiz">
+                </optgroup>
+                <optgroup label="Santa Catarina">
+                  <option value="Florianópolis">
+                  <option value="Joinville">
+                  <option value="Blumenau">
+                </optgroup>
+                <optgroup label="São Paulo">
+                  <option value="São Paulo">
+                  <option value="Guarulhos">
+                  <option value="Campinas">
+                </optgroup>
+                <optgroup label="Sergipe">
+                  <option value="Aracaju">
+                  <option value="Nossa Senhora do Socorro">
+                  <option value="Lagarto">
+                </optgroup>
+                <optgroup label="Tocantins">
+                  <option value="Palmas">
+                  <option value="Araguaína">
+                  <option value="Gurupi">
+                </optgroup>
+              </datalist>
           </fieldset>
           <fieldset id="mensagem">
             <legend>Mensagem do Usuário</legend>
-              Grau de Urgência:
-              Mensagem:
-          
+              <p>
+                <label for="cUrg">Grau de Urgência:</label>
+                Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Max
+              </p>
+              <p>
+                <label for="cMsg">Mensagem:</label>
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+              </p>
           </fieldset>
           <fieldset id="pedido">
             <legend>Quero um Google Glass</legend>
-              Gostaria de adquirir um Google Glass quando disponível
-              Cor:
-              Quantidade:
-              Preço Total: R$
+              <p>
+                <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label>
+
+              </p>
+              <p>
+                <label for="cCor">Cor:</label>
+
+              </p>
+              <p>
+                <label for="cQtd">Quantidade:</label>
+
+              </p>
+              <p>
+                <label for="cTot">Preço Total: R$</label>
+
+              </p>
           </fieldset>
 
           [BOTÃO ENVIAR]
