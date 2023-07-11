@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Tudo sobre Google Glass</title>
   <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+  <link rel="stylesheet" type="text/css" href="_css/specs.css" />
 </head>
 <script src="_javascript/funcoes.js"></script>
 
@@ -28,16 +29,38 @@
           </ul>
       </nav>
     </header>
-    <section>
-      Glass > Especificações
-      Raio-X no Google Glass
-      por Gustavo Guanabara
-      Atualizado em 01/Maio/2013
+    <section id="corpo-full">
+      <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+          <hgroup>
+            <h3>Glass &gt; Especificações</h3>
+            <h1>Raio-X no Google Glass</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+          </hgroup>
+        </header>
 
-      Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer
-      ponto vermelho vai te levar a um lugar cheio de novas informações.
+        <p>
+        Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+        </p>
+        <section id="conteudo">
+          <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+          <map name="meumapa">
+            <!--Rectangulo coordenadas: "x1,y1,x2,y2"
+            <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela"/>
+            -->
 
-      [AQUI ENTRA UMA IMAGEM]
+            <!--Circulo coordenadas: "x0,y0,r"-->
+            <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela"/>
+            <area shape="circle" coords="76,52,12" href="google-glass.html#gadgets" target="janela"/>
+
+            <!--Poligono coordenadas: "x1,y1,x2,y2,...,xn,yn"-->
+            <area shape="poly" coords="27,142,26,168,83,217,85,250" href = "google-glass.html#sensores" target="janela"/>
+            <area shape="poly" coords="184,219,184,256,266,206,266,243" href="google-glass.html#tela" target="janela"/>
+          </map>
+          <iframe src="google-glass.html" name="janela" id="frame-spec" scrolling="no"></iframe>
+        </section>
+      </article>
     </section>
     <footer id="rodape">
       <p>
