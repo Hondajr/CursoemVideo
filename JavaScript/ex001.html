@@ -23,9 +23,16 @@
     <script>
       window.alert('Minha primeira mensagem');
       window.confirm('Está gostando de JS?');
+      /* Variaveis:
+        Podem iniciar com letras, $ ou _.
+        Não podem começar com números, mas podemos utiliza-los apos o primeiro char.
+        Não podem possuir espaços.
+        Se atentar a palavras reservadas.
+        JS é case sensitive.
+      */
       var nome;
       nome = window.prompt('Qual o seu nome?');
-      window.alert('Olá, '+ nome);
+      window.alert(typeof(nome)); //typeof() funcao que retorna o tipo da variavel.
     </script>
   </body>
 </html>
