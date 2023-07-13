@@ -21,18 +21,25 @@
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eveniet nihil molestias itaque cum fugit eos corrupti, expedita perferendis, similique saepe voluptatibus ratione optio natus quia nam? Inventore, tenetur doloremque?
     </p>
     <script>
-      window.alert('Minha primeira mensagem');
-      window.confirm('Está gostando de JS?');
-      /* Variaveis:
-        Podem iniciar com letras, $ ou _.
-        Não podem começar com números, mas podemos utiliza-los apos o primeiro char.
-        Não podem possuir espaços.
-        Se atentar a palavras reservadas.
-        JS é case sensitive.
+      var nome = window.prompt('Qual o seu nome?');
+      window.alert("Ola, " + nome);
+      //O retorno do window.prompt() é em String, caso necessite de outro tipo, precisa de conversão
+      var n1 = parseInt(window.prompt("Digite um numero: "));
+      var n2 = Number(window.prompt("Digite outro numero: "));
+      var tot = n1 + n2;
+      window.alert(`A soma dos numeros é: ${tot.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'})}`)
+      /*
+        Algumas manipulações de String:
+        s.length, retorna o tamanho da variavel
+        s.toUpperCase(), converte para maiuscula
+        s.toLowerCase(), converte para minuscula
       */
-      var nome;
-      nome = window.prompt('Qual o seu nome?');
-      window.alert(typeof(nome)); //typeof() funcao que retorna o tipo da variavel.
+     /*
+      Algumas manipulações de Numeros:
+      n.toFixed(2), fixa o numero de casas decimais em '2'
+      n.toFixed(2).replace('.',',') Substitui o ponto por virgula
+      n.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}), Formatação de moeda
+     */
     </script>
   </body>
 </html>
