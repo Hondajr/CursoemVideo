@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+  <style>
+    div#area{
+      font: normal 20pt Arial;
+      background: rgb(42,139,42);
+      color:white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="area" onmousedown="clicar()" onmouseup="clicar1()">
+    Interaja...
+  </div>
+  <script>
+    /*
+      Eventos DOM
+      (Para saber mais, procurar por eventos DOM)
+        mouseenter = mouse entra da area do elemento a qual esta atrelado.
+        mousemove = mouse se movendo dentro da area do elemento a qual esta atrelado.
+        mousedown = ao click do mouse, ao pressionar o botao.
+        mouseup = ao soltar o click do mouse.
+        click = juncao do mousedown + mousedown
+        mouseout = mouse sai da area do elemento a qual esta atrelado.
+    */
+    var a = window.document.getElementById('area')
+    a.addEventListener('mouseenter', entrar);
+    a.addEventListener('mouseout', sair);
+    function clicar() {
+      a.innerText = 'Clicou!';
+      a.style.background = 'rgb(100,0,0)';
+    }
+    function clicar1() {
+      a.innerText = 'Interaja...';
+      a.style.background = 'rgb(42,139,42)';
+    }
+    function entrar(){
+      a.innerText = 'Entrou!';
+    }
+    function sair(){
+      a.innerText = 'Saiu!';
+    }
+  </script>
+</body>
+</html>
