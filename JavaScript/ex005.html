@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos com DOM</title>
+  <style>
+    body{
+      background: rgb(80,130,200);
+      color:white;
+      font: normal 18pt Arial;
+    }
+  </style>
+</head>
+<body>
+  <h1>Iniciando estudos com DOM</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+  <div id="msg">Clique em mim</div>
+  <script>
+    /*DOM Document Object Model
+    ARVORE DOM comum:
+      window
+        >location = onde estamos
+        >document = o que tem na página
+          >HTML
+            >head
+              >meta
+              >title
+            >body
+              >h1
+              >p
+              >p
+                >strong
+              >div
+        >history = de onde viemos
+    */
+   /* A seleção de objetos dentro do DOM, pode ser feito por:
+    getElementsByTagName();
+      Seleciona por tag todos os elementos da tag determinada, selecione a certa pelo index
+    
+    var p1= window.document.getElementsByTagName('p')[0]; //Seleciona o componente de index 0 do documento.
+    getElementsByClassName();
+    var d = window.document.getElementById('msg');
+    d.innerText='Estou aguardando';
+    getElementById();
+    getElementsByName();
+    getElementsbyTagNameNS();
+   */
+  </script>
+</body>
+</html>
