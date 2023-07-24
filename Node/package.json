@@ -4,12 +4,15 @@
   "description": "Curso de Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "Node"
   },
   "author": "Hondajr",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
