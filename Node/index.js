@@ -5,7 +5,7 @@ const {Person} = require("./person");
 const person = new Person("Honda");
 
 //Testamos o metodo
-console.log(person.sayMyName());
+//console.log(person.sayMyName());
 
 //'package-lock.json', lista as versões dos modulos que estão sendo usados no projeto.
 
@@ -16,3 +16,9 @@ console.log(person.sayMyName());
       Caso o nodemon esteja instalado globalmente, podemos simplesmente executar:
         `nodemon index.js`
 */
+
+//Importando um arquivo para ser executado:
+//require('./modules/path');
+
+//Importando o arquivo fs e executando via nodemon
+//require('./modules/fs');
